@@ -1,3 +1,10 @@
+def hello_t
+
+end
+
+# call your method here!
+
+# OG: The below has been copied and pasted from "Yield and Blocks" in "Web Development Fundamentals".
 def hello_t(array)
   if block_given?
     i = 0 
@@ -10,12 +17,5 @@ def hello_t(array)
     array 
   else
     puts "Hey! No block was given!"
-  end
-end
-
-# call your method here!
-hello_t(["Tim", "Tom", "Jim"]) do |name|
-  if name.start_with?("T")
-    puts "Hi, #{name}"
-  end
+  end 
 end
